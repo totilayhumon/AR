@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+		<!-- include ar.js for a-frame -->
+		<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+	</head>
+	<body>
+		<a-scene embedded arjs>
+			<a-marker preset="hiro">
+			<!-- create your AR content here -->
+			   <a-box position="0 4 -9" depth="2" height="2" width="2" color="red" rotation="0 45 0"></a-box>
+			
+			</a-marker>
+
+			<!-- define a camera which will move according to the marker position -->
+			<a-entity camera></a-entity>
+		</a-scene>
+	</body>
+</html>
