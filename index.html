@@ -9,9 +9,15 @@
 		<a-scene embedded arjs>
 			<a-marker preset="custom" type="pattern" url="https://raw.githubusercontent.com/totilayhumon/AR/main/pattern-marker.patt">
 			<!-- create your AR content here -->
-			   <a-box position="0 4 0" depth="2" height="2" width="2" color="red" rotation="0 45 0"></a-box>
-			 <a-cylinder position="0 6 0" radius="0.5" height="1.5" color="green" rotation="0 0 0"></a-cylinder>
-   <a-cone color="red" radius-bottom="1" radius-top="0" height="1" position="0 7 0" rotation="0 0 0"></a-cone>
+      <a-sphere position="2.5 -.5 -5" radius=".5" src="https://th.bing.com/th/id/OIP.EEmuKnhWb9x-btBTccNIRAHaE4?w=295&h=195&c=7&r=0&o=7&pid=1.7&rm=3"  
+        animation="
+        property: position;
+        from: 2.5 -.5 -5;
+        to: -15 10 -5;
+        dur: 4500 ;
+        loop: false
+    "></a-sphere>
+
 			</a-marker>
 
 			<!-- define a camera which will move according to the marker position -->
